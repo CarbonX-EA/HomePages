@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/T-logo.ico" /> 
+<title>TMW - Home</title>
+<meta name="description" content="Coming Soon Responsive Template">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<!--main-->
+<section class="main">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6"> 
+        <!--logo-->
+        <div class="logo"><img src="img/logo2.png" data-at2x="img/logo@2x.png" alt="logo"></div>
+        <!--logo end--> 
+      </div>
+     
+    </div>
+    <div class="row">
+      <div class="col-md-12"> 
+        
+        <!--welcome-message-->
+        <header class="welcome-message text-center">
+        <h1>
+          <div id="time"></div>
+			<script type="text/javascript">
+				function time(){
+					var vWeek,vWeek_s,vDay;
+					vWeek = ["星期天","星期一","星期二","星期三","星期四","星期五","星期六"];
+					var date =  new Date();
+					year = date.getFullYear();
+					month = date.getMonth() + 1;
+					day = date.getDate();
+					hours = date.getHours();
+					minutes = date.getMinutes();
+					seconds = date.getSeconds();
+					vWeek_s = date.getDay();
+					if(month<10){
+					month = "0"+month;
+					}
+					if(day<10){
+						day = "0"+day;
+					}
+					if(hours<10){
+						hours = "0"+hours;
+					}
+					if(minutes<10){
+						minutes = "0"+minutes;
+					}
+					if(seconds<10){
+						seconds = "0"+seconds;
+					}
+					document.getElementById("time").innerHTML = year + "年" + month + "月" + day + "日" + "\t" + hours + ":" + minutes +":" + seconds + "\t" + vWeek[vWeek_s] ;
+
+};
+			setInterval("time()",1000);
+
+			</script></h1>
+        </header>
+        <!--welcome-message end--> 
+        
+        <!--sub-form-->
+        <div class="sub-form text-center">
+          <div class="row">
+            <div class="col-md-5 center-block col-sm-8 col-xs-11" style="width:auto;">
+              <form role="form" id="mc-form" action="http://www.baidu.com/baidu" target="_blank">
+                <div class="input-group">
+                  <input id="search-input" class="form-control" type="text" autocomplete="off" maxlength="100" name="word" placeholder="搜你想搜的" />
+                  <a class="hotword hotword-hook" href="http://top.baidu.com/buzz?b=1">
+</a>
+                  <span class="input-group-btn">
+                  <div class="button-wrapper g-ib" ><input class="btn btn-default" type="submit" value="百度一下" /><i class="fa fa-paper-plane"></i></div>
+                  </span> </div>
+              </form>
+              <p id="mc-notification"></p>
+            </div>
+          </div>
+        </div>
+        <!--sub-form end--> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!--main end--> 
+
+<!--Features-->
+
+
+<section class="features section-spacing">
+  <div class="container">
+    <h2 class="text-center">网站后期模块</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="wow fadeInUp product-features row">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-center"><i class="fa fa-rocket fa-3x"></i></div>
+          <div class="col-md-10 col-sm-10 col-xs-10"> 
+            <!--features 3-->
+            <h4>网站导航</h4>
+            <p>增加各类网站导航，例如社交网站，学习网站等</p>
+            <!--features 3 end--> 
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="wow fadeInUp product-features row">
+          <div class="col-md-2 col-sm-2 col-xs-2 text-center"><i class="fa fa-paper-plane-o fa-3x"></i></div>
+          <div class="col-md-10 col-sm-10 col-xs-10">
+      		<!--features 4-->
+            <h4>建议</h4>
+            <p>联系邮箱：335298086@qq.com</p>
+            <!--features 4 end--> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Features end--> 
+
+<!--PRELOAD-->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+<!--end PRELOAD--> 
+
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/jquery.backstretch.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/tweetie.min.js"></script> 
+<script src="js/jquery.downCount.js"></script> 
+<script src="js/jquery.form.min.js"></script> 
+<script src="js/jquery.validate.min.js"></script> 
+<script src="js/jquery.simple-text-rotator.min.js"></script> 
+<script src="js/main.js"></script> 
+
+<script src="js/gmap.js"></script>
+</body>
+</html>
